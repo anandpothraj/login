@@ -1,11 +1,16 @@
 import './App.css';
 import Login from './Login';
+import 'react-toastify/dist/ReactToastify.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Login/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Login/>} exact/>
+      </Routes>
+    </Router>
   );
 }
 

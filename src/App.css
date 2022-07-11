@@ -1,4 +1,4 @@
-.App{
+.loginDiv{
   background-color: rgb(244,91,105);
   height: 100vh;
   width: 100vw;
@@ -53,7 +53,9 @@ input{
   width: 100%;
   border: 0;
   padding: 10px 10px;
-  margin: 15px -10px;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
   border: 0.1px solid grey;
 }
 
@@ -75,6 +77,11 @@ input{
   background-color: rgb(244,91,105);
 }
 
+.link{
+  font-size: 12px;
+  color: black;
+  margin-top: 5px;
+}
 
 @media screen and (max-width: 1200px) {
   .loginCard{
@@ -116,6 +123,13 @@ input{
   }
   .imgDiv{
     display: none;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .loginCard{
+    width: 85%;
   }
   
 }
