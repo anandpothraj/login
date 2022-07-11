@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.App{
+  background-color: rgb(244,91,105);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login{
+  margin: auto;
+  border-radius: 10px;
+  min-width: 75vw;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form{
+  width: 50%;
+  background-color: beige;
+  display: flex;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.imgDiv{
+  width: 50%;
+  display: flex;
+}
+
+.loginImg{
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+.loginCard{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: auto;
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  padding: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+  border: 0.1px solid grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.loginBtn{
+  cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 25px 25px 0px 25px;
+    background-color: black;
+}
+
+.loginBtn:hover {
+  background-color: rgb(244,91,105);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .loginCard{
+    width:70%;
   }
-  to {
-    transform: rotate(360deg);
+  .form{
+    width: 60%;
+  }
+  .imgDiv{
+    width: 40%;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .loginImg{
+    max-width: 250px;
+  }
+  .form{
+    width: 65%;
+  }
+  .imgDiv{
+    width: 35%;
+  }
+  .loginImg{
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .login{
+    width:100%;
+  }
+  .form{
+    width: 100%;
+    background-color: rgb(244,91,105);
+  }
+  .loginCard{
+    width: 80%;
+  }
+  .imgDiv{
+    display: none;
+  }
+  
+}
+
